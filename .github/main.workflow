@@ -21,13 +21,13 @@ action "Docker Lint" {
 action "Build" {
   needs = ["Shell Lint", "Test", "Docker Lint"]
   uses = "actions/docker/cli@master"
-  args = "build -t npm ."
+  args = "build -t yarn ."
 }
 
 action "Docker Tag" {
   needs = ["Build"]
   uses = "actions/docker/tag@master"
-  args = "npm github/npm --no-latest"
+  args = "yarn ryanwild/yarn --no-latest"
 }
 
 action "Publish Filter" {
