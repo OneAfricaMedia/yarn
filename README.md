@@ -1,6 +1,6 @@
-# GitHub Actions for NPM
+# GitHub Actions for Yarn
 
-This Action for [npm](https://www.npmjs.com/) enables arbitrary actions with the `npm` command-line client, including testing packages and publishing to a registry.
+This Action for [yarn](https://yarnpkg.com/) enables arbitrary actions with the `yarn` command-line client, including testing packages and publishing to a registry.
 
 ## Usage
 
